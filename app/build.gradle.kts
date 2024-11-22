@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.hal_domae.kadai08_ia"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.hal_domae.kadai08_ia"
@@ -32,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
