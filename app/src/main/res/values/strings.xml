@@ -7,4 +7,8 @@
     <!-- 一覧内のアイテム -->
     <string name="default_date">2024/01/01</string>
     <string name="default_text">ここにテキストが入ります</string>
+
+    <!-- 追加画面 -->
+    <string name="edit_date_title">日付</string>
+    <string name="hint_date">日付を選択</string>
 </resources>

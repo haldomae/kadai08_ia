@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 各項目を囲うレイアウト -->
+    <style name="area_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 各項目のタイトル -->
+    <style name="edit_item_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="edit_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:inputType">date</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+</resources>

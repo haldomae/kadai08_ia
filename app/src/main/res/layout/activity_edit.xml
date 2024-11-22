@@ -7,4 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".EditActivity">
 
+    <!-- 日付 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/select_date_area"
+        style="@style/area_style"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/edit_date_title"
+            style="@style/edit_item_style"
+            android:text="@string/edit_date_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/select_date"/>
+        <EditText
+            android:id="@+id/select_date"
+            style="@style/edit_input_style"
+            android:hint="@string/hint_date"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@id/edit_date_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
