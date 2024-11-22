@@ -3,4 +3,8 @@
 
     <!-- 一覧 -->
     <string name="add_button">追加ボタン</string>
+
+    <!-- 一覧内のアイテム -->
+    <string name="default_date">2024/01/01</string>
+    <string name="default_text">ここにテキストが入ります</string>
 </resources>
