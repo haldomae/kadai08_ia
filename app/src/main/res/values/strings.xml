@@ -11,4 +11,12 @@
     <!-- 追加画面 -->
     <string name="edit_date_title">日付</string>
     <string name="hint_date">日付を選択</string>
+    <string name="select_feel_title">気分は?</string>
+    <string name="select_action_title">何をした?</string>
+    <string name="input_diary_title">日記</string>
+    <string name="hint_diary">ボタンを押すと日記が作成されます</string>
+    <string name="save_button">保存</string>
+    <string name="delete_button">削除</string>
+    <string name="formatted_date">%d/%02d/%02d</string>
+    <string name="diary_text">%s%s</string>
 </resources>
