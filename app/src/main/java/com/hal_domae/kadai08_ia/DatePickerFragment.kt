@@ -30,6 +30,6 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
 
 
     override fun onDateSet(p0: DatePicker?, p1: Int, p2: Int, p3: Int) {
-        activity?.findViewById<EditText>(R.id.select_date)?.setText(getString(R.string.formatted_date, p1, p2, p3))
+        activity?.findViewById<EditText>(R.id.select_date)?.setText(getString(R.string.formatted_date, p1, p2+1, p3))
     }
 }
