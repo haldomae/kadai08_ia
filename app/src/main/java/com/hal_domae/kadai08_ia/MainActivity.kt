@@ -1,5 +1,6 @@
 package com.hal_domae.kadai08_ia
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.SimpleAdapter
 import androidx.activity.enableEdgeToEdge
@@ -72,5 +73,10 @@ class MainActivity : AppCompatActivity() {
         // 区切り線を付ける
         val dividerItemDecoration = DividerItemDecoration(this@MainActivity, DividerItemDecoration.VERTICAL)
         binding.diaryList.addItemDecoration(dividerItemDecoration)
+
+        // 日記追加画面に遷移
+        binding.addButton.setOnClickListener {
+            startActivity(Intent(this@MainActivity, EditActivity::class.java))
+        }
     }
 }
