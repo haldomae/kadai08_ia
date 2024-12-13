@@ -77,6 +77,16 @@ class EditActivity : AppCompatActivity() {
             // 日記一覧画面に戻る
             startActivity(Intent(this@EditActivity, MainActivity::class.java))
         }
+
+        // 削除処理
+        // 1. 日付入力されているか? 入力されていなければToastで警告を出す
+        // 2. 削除処理を実行
+        //  A. 配列形式でデータを取得する(arrayOf(日付の場所のテキストを取得した後、String型にキャストする))
+        //  B. deleteメソッドでデータを削除
+        //   a. 3つ引数が必要で、1つ目がテーブル名
+        //   b. 2つ目が削除する条件でプレースホルダーで指定する(例) "user_id = ?")
+        //   c. 3つ目がプレースホルダーの?にハマるパラメータを配列で指定する
+        // 3. 一覧画面に戻る
     }
 
     // 気分は?が押されたときの共通の関数
