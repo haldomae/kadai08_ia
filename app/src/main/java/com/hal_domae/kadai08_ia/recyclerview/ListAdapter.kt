@@ -31,7 +31,7 @@ class ListAdapter(private val data: MutableList<Map<String, String>>): RecyclerV
             it.context.startActivity(
                 Intent(it.context, EditActivity::class.java).apply {
                     putExtra("DIARY_DATE", date)
-                    putExtra("DIARY_TEXt", text)
+                    putExtra("DIARY_TEXT", text)
                 }
             )
         }

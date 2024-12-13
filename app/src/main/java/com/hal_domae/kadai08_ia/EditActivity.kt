@@ -25,6 +25,14 @@ class EditActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // 項目をタップした時に渡されたデータを反映
+        // 画面遷移した時に値があるかチェック
+        intent?.extras?.let{
+            binding.selectDate.setText(it.getString("DIARY_DATE"))
+            binding.inputDiary.setText(it.getString("DIARY_TEXT"))
+        }
+
         // カレンダー開く
         binding.selectDate.setOnClickListener {
             val datePicker = DatePickerFragment()
