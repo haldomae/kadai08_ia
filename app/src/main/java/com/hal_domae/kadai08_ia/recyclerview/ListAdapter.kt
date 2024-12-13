@@ -1,8 +1,10 @@
 package com.hal_domae.kadai08_ia.recyclerview
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.hal_domae.kadai08_ia.EditActivity
 import com.hal_domae.kadai08_ia.R
 
 class ListAdapter(private val data: MutableList<Map<String, String>>): RecyclerView.Adapter<ViewHolder>() {
@@ -18,8 +20,21 @@ class ListAdapter(private val data: MutableList<Map<String, String>>): RecyclerV
 
     // ViewHolderの中身を変更
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemDate.text = data[position]["date"]
-        holder.itemText.text = data[position]["text"]
+        val date = data[position]["date"]
+        val text = data[position]["text"]
+
+        holder.itemDate.text = date
+        holder.itemText.text = text
+
+        // 日記の項目を押した時の処理
+        holder.itemView.setOnClickListener {
+            it.context.startActivity(
+                Intent(it.context, EditActivity::class.java).apply {
+                    putExtra("DIARY_DATE", date)
+                    putExtra("DIARY_TEXt", text)
+                }
+            )
+        }
     }
 
 }
